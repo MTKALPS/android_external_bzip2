@@ -30,6 +30,7 @@ bzlib_files := \
 
 LOCAL_SRC_FILES := $(bzlib_files)
 LOCAL_MODULE := libbz
+LOCAL_MULTILIB := both
 LOCAL_CFLAGS += -O3 -DUSE_MMAP
 ifeq ($(TARGET_ARCH),arm)
   LOCAL_SDK_VERSION := 9
